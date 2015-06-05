@@ -92,18 +92,9 @@ pip install -r requirements.txt
 pip install -r requirements-gui.txt
 python setup.py develop
 git clone https://github.com/BlazZupan/orange3-datafusion
+cd orange3-datafusion
+python setup.py develop
 </pre></code>
-
-<p> Now you can start IPython environment and import Orange. To exit ipython type Ctrl+D.
-<pre><code>ipython
->>> import Orange</pre></code>
-
-<p> To start IPython notebook, write the following line </p>
-<pre><code>ipython notebook</pre></code>
-
-<p> If you get ValueError: unknown locale: UTF-8, you can solve it using following commands: </p>
-<pre><code>export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8</code></pre>
 
 <!--p>Go to Orange home page at <a href="http://orange.biolab.si">http://orange.biolab.si</a> to download the installation file.</p>
 
@@ -156,12 +147,6 @@ you want to allow this program to make changes to your computer.</p>
 
 <p><img src="image15.png" style="max-width:200px;"></p>
 
-<p> If you used default settings during installation, you can enter python environment by writing following line:
-<pre><code> C:\Python34\python.exe </code></pre>
-
-<p> To start IPython notebook write the following line: </p>
-<pre><code> C:\Python34\Scripts\ipython3.exe notebook</code></pre>
-
 <h2><a name="lin"></a>Step 1: Linux</h2>
 
 <h3>Ubuntu (tested on Ubuntu 14.04 and 14.10)</h3>
@@ -189,8 +174,7 @@ Open a terminal and run the following commands.</p>
 sudo apt-get install git python-pip python-virtualenv 
   python3-dev python3-numpy python3-scipy 
   python3-pyqt4 python-qt4-dev python3-sip-dev libqt4-dev
-  python3-matplotlib ipython3-notebook 
-  libxml2-dev zlib1g-dev libgraphviz-dev
+  libgraphviz-dev
 </pre></code>
 
 <p>We will use Python3 and need to create a virtual environment for it:</p>
@@ -215,9 +199,6 @@ python setup.py develop
 <pre><code>python -m Orange.canvas</pre></code>
 
 
-<p> To start IPython notebook, write the following line </p>
-<pre><code>ipython3 notebook</pre></code>
-
 <h3>openSUSE (tested on openSUSE 13.2)</h3>
 
 <h4> Automatic setup </h4>
@@ -240,10 +221,8 @@ Open a terminal and run the following commands.</p>
 <p>Install the necessary system packages:</p>
 
 <pre><code>sudo zypper refresh
-sudo zypper install git python-virtualenv python3-devel 
-	gcc gcc-c++ python3-numpy python3-numpy-devel 
-  python3-scipy python3-matplotlib python3-IPython 
-  python3-Jinja2 libxml2-devel lzlib-devel 
+sudo zypper install git python-virtualenv python3-devel gcc gcc-c++ 
+  python3-numpy python3-numpy-devel python3-scipy 
   python3-qt4-devel libgraphviz-devel
 </pre></code>
 
@@ -267,25 +246,12 @@ python setup.py develop</pre></code>
 <p> Now you can open Orange with following command </p>
 <pre><code>python -m Orange.canvas</pre></code>
 
-<p> To start IPython notebook, write the following line </p>
-<pre><code>ipython3 notebook</pre></code>
-
 <h2><a name="testing"></a>Step 2: Testing the Environment</h2>
 
 <p>Once you successfully installed the relevant libraries as 
 instructed above please download 
-<a href="https://www.dropbox.com/s/hxh26wevs8tymyv/Testing%20Python%20Environment.ipynb?dl=0">Testing Python Environment Notebook</a>. 
-If you use Safari, you need to change file extension to <i>.ipynb</i>, otherwise the file will not be recognized by IPython Notebook. </p>
+<a href="http://bit.ly/1Gb8SJ7"> Datafusion datasets </a>. 
 
-<p>Start IPython notebook from the directory with the downloaded file. Command that starts IPython notebook for Mac OS X is </p>
-<pre><code>ipython notebook</pre></code>
-<p> for Linux </p>
-<pre><code>ipython3 notebook</pre></code>
-<p> and for Windows </p>
-<pre><code>C:\Python34\Scripts\ipython3.exe notebook </pre></code>
-
-<p> Then open <i>Testing Python Environment Notebook</i> from the IPython 
-Notebook Dashboard. Follow the instructions therein. </p>
 
 
 <p>That's it! We are looking forward to having you attend the workshop!</p>

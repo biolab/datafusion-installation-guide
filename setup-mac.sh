@@ -14,9 +14,9 @@ pip install numpy &&
 pip install -r requirements.txt &&
 pip install -r requirements-gui.txt &&
 python setup.py develop &&
-pip install ipython[all] Orange-Bioinformatics networkx python-igraph matplotlib
-
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
+cd .. &&
+git clone https://github.com/BlazZupan/orange3-datafusion &&
+cd orange3-datafusion &&
+python setup.py develop
 
 python -m Orange.canvas
