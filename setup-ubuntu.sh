@@ -19,5 +19,3 @@ cd ..
 git clone https://github.com/BlazZupan/orange3-datafusion
 cd orange3-datafusion
 python setup.py develop
-
-python -m Orange.canvas

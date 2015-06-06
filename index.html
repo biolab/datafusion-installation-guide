@@ -47,54 +47,49 @@ The following instructions will guide you through installation of various librar
 
 <h2><a name="mac"></a>Step 1: Mac OS X</h2>
 
-<h4> Automatic setup </h4>
-<p> Install can be automated by using Mac OS X setup script
-<a href="setup-mac.sh">setup-mac.sh</a>: please download the script file and save it to directory where you would like 
-to place your software installation. 
-Setup will install Orange3, numpy and scikit-learn and their dependencies in a virtual environment, 
-and finally run IPython notebook. Before the installation, open the terminal and
-move to directory, where you want Orange3 to be installed.
-The following command wil start the installation, which should take about 15 minutes. </p>
-<pre><code> source setup-mac.sh </code></pre>
-<p>Install script will also create and enter new virtual environment, which 
-you can reenter using following command:</p>
-<pre><code> source orange3env/bin/activate </code></pre>
-<p>The installed packages can be used only from within virtual environment.</p>
+<h4>In a nutshell</h4>
 
-<h4> Manual installation </h4>
-<p> Instead of automatic install, you can install the software manually.
-Open a terminal and run the following commands:</p>
+<p>Go to Orange home page at <a href="http://orange.biolab.si/orange3">http://orange.biolab.si/orange3</a>, download the latest version of Orange (the dmg file), install it on your laptop and continue to <a href="#s3">Step 2</a> below.</p>
 
-Install homebrew package manager by executing (it will ask you to install XCode Command Line Tools):
-<pre><code>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-</code></pre>
+<h4>Detailed installation instructions</h4>
 
-<p> Enable science packages and install dependencies </p>
-<pre><code>brew tap homebrew/science</code></pre>
 
-<p>Install the necessary system packages:</p>
+<p><a href="http://orange.biolab.si/download/files/Orange3-3.2.dev0+041ec63.dmg"> Download latest bundle for OSX </a>
+from the <a href="http://orange.biolab.si/orange3"> Orange3 download site </a> 
 
-<pre><code>brew install makedepend git python3 gcc suite-sparse swig qt
-</pre></code>
+<p>Your browser will most likely save the installation file (a file with a name similar to Orange3-3.2.dev0+041ec63.dmg)
+in your Downloads folder.</p>
 
-<p> We will use Python3 and need to create a virtual environment for it:</p>
+<p><a href="mac03.png"><img src="mac03.png" style="max-width:400px;"></a></p>
 
-<pre><code>pip3 install virtualenv
-virtualenv -p python3 orange3env
-source orange3env/bin/activate
-</pre></code>
+<p> Open the installation file by double clicking its icon. </p>
+A window like the one below should open. Drag the Orange icon to your Applications.</p>
 
-<p> Install Orange and its requirements (this step will take about 15 minutes):
-<pre><code>git clone https://github.com/biolab/orange3
-cd orange3
-pip install numpy
-pip install -r requirements.txt
-pip install -r requirements-gui.txt
-python setup.py develop
-git clone https://github.com/BlazZupan/orange3-datafusion
-cd orange3-datafusion
-python setup.py develop
-</pre></code>
+<p><a href="mac04.png"><img src="mac04.png" style="max-width:250px;"></a></p>
+
+
+<p>Open Orange from your Application folder. 
+That is, open the Application folder, find an application with the name Orange, 
+click on its icon to select it, and open it by choosing Open from Finder's File menu.
+(you should use this procedure instead of double click to open unregistered 
+applications for the first time). 
+<p><a href="mac05.png"><img src="mac05.png" style="max-width:250px;"></a></p>
+
+
+<p>Install Datafusion addon by following menu Options->Add-ons. Dialog 
+like this one will appear. </p>
+
+<p><a href="mac07.png"><img src="mac07-2.png" style="max-width:250px;"></a></p>
+
+<p>Now check the Orange3-DataFusion add-on and click OK to install. After 
+the install process is complete, close and reopen the Orange3 application. 
+Now, you should be able to see the new DataFusion widgets in the left panel.</p>
+
+<p><a href="mac08.png"><img src="mac08.png" style="max-width:100px;"></a></p>
+
+
+Continue to the <a href="#s3">Step 2</a> of this installation tutorial.</p>
+
 
 <!--p>Go to Orange home page at <a href="http://orange.biolab.si">http://orange.biolab.si</a> to download the installation file.</p>
 
@@ -143,9 +138,34 @@ you want to allow this program to make changes to your computer.</p>
 
 <p><img src="image09.png" style="max-width:400px;"></p>
 
-<p>Go to windows start menu and write 'cmd'. Program cmd will appear on list as shown on picture below. Click on it and a window will open. </p>
+<p> For DataFusion widgets to work, you will have to install graphviz and pygraphviz</p>
 
+<p> First download the latest version of graphviz</p>
+<a href="http://www.graphviz.org/pub/graphviz/stable/windows/graphviz-2.38.msi"> http://www.graphviz.org/pub/graphviz/stable/windows/graphviz-2.38.msi </a>
+
+<p> Download and install the pygraphviz package</p>
+<p> Use the 32-bit version of the package for python3.4</p>
+<a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/68tmfkay/pygraphviz-1.3rc2-cp34-none-win32.whl"></a>
+http://www.lfd.uci.edu/~gohlke/pythonlibs/68tmfkay/pygraphviz-1.3rc2-cp34-none-win32.whl</a>
+from <a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/#pygraphviz"> http://www.lfd.uci.edu/~gohlke/pythonlibs/#pygraphviz</a>
+
+<p> Now open the command line by opening cmd.exe from start menu.</p>
 <p><img src="image15.png" style="max-width:200px;"></p>
+
+<p> Move to the downloads directory or where you downloaded the installation
+files from the previous steps. </p>
+
+<pre><code>cd Downloads</pre></code>
+
+<p> Execute pygraphviz install file by executing following command </p>
+<pre><code>C:\Python34\Scripts\pip.exe install pygraphviz‑1.3rc2‑cp34‑none‑win32.whl</code></pre>
+
+<p> Open Orange3 and install Orange3-DataFusion add-on by following 
+menu Options->Add-ons</p>
+
+<p> Check the Orange3-DataFusion add-on and click OK.</p>
+
+<p> Restart the Orange3 application.</p>
 
 <h2><a name="lin"></a>Step 1: Linux</h2>
 
@@ -154,15 +174,15 @@ you want to allow this program to make changes to your computer.</p>
 <h4> Automatic setup </h4>
 <p> Install can be automated by using 
 <a href="setup-ubuntu.sh"> Ubuntu 14.04 setup script </a>.
-Setup will install Orange3 and its dependencies in a virtual environment, 
-and finally run IPython notebook. Before the installation, 
-move to directory, where you want Orange3 to be installed. 
-Following command wil start installation, which usually takes arround 15 minutes. </p>
+Before the installation, move to directory, where you want Orange3 to be installed. 
+Following command will start installation, which usually takes about 15 minutes. </p>
 <pre><code> source setup-ubuntu.sh </code></pre>
 <p>Install script will also create and enter new virtual environment for you, which 
 you can reenter using following command:</p>
 <pre><code> source orange3env/bin/activate </code></pre>
-<p>Orange can be used only from within virtual environment.</p>
+You open the Orange application by executing the following command from the
+virtual environment.
+<pre><code>python -m Orange.canvas</pre></code>
 
 <h4> Manual installation </h4>
 <p>Alternatively, you can choose manual installation. 
@@ -204,15 +224,15 @@ python setup.py develop
 <h4> Automatic setup </h4>
 <p> Install can be automated by using 
 <a href="setup-suse.sh"> openSUSE setup script </a>. 
-Setup will install Orange3 and its dependencies in a virtual environment, 
-and finally run IPython notebook. Before the installation, 
-move to directory, where you want Orange3 to be installed. 
-Following command wil start installation, which usually takes arround 15 minutes. </p>
+Before the installation, move to directory, where you want Orange3 to be installed. 
+Following command will start installation, which usually takes about 15 minutes. </p>
 <pre><code> source setup-suse.sh </code></pre>
 <p>Install script will also create and enter new virtual environment for you, which 
 you can reenter using following command:</p>
 <pre><code> source orange3env/bin/activate </code></pre>
-<p>Orange can be used only from within virtual environment.</p>
+Then you open the Orange application by executing the following command from 
+the virtual environment.
+<pre><code>python -m Orange.canvas</pre></code>
 
 <h4> Manual installation </h4>
 <p>Alternatively, you can choose manual installation. 
