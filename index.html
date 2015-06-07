@@ -62,7 +62,7 @@ from the <a href="http://orange.biolab.si/orange3"> Orange3 download site </a> .
 <p>Your browser will most likely save the installation file (a file with a name similar to Orange3-3.2.dev0+041ec63.dmg)
 in your Downloads folder.</p>
 
-<p><a href="mac03.png"><img src="mac03.png" style="max-width:400px;"></a></p>
+<p><a href="mac03.png"><img src="mac03-3.png" style="max-width:400px;"></a></p>
 
 <p> Open the installation file by double clicking its icon. </p>
 A window like the one below should open. Drag the Orange icon to your Applications.</p>
@@ -75,7 +75,7 @@ That is, open the Application folder, find an application with the name Orange,
 click on its icon to select it, and open it by choosing Open from Finder's File menu.
 (you should use this procedure instead of double click to open unregistered 
 applications for the first time). 
-<p><a href="mac05.png"><img src="mac05.png" style="max-width:250px;"></a></p>
+<p><a href="mac05.png"><img src="mac05-2.png" style="max-width:250px;"></a></p>
 
 
 <p>Install Datafusion addon by following menu Options->Add-ons. Dialog 
@@ -87,7 +87,7 @@ like this one will appear. </p>
 the install process is complete, close and reopen the Orange3 application. 
 Now, you should be able to see the new DataFusion widgets in the left panel.</p>
 
-<p><a href="mac08.png"><img src="mac08.png" style="max-width:100px;"></a></p>
+<p><a href="mac08.png"><img src="mac08-2.png" style="max-width:100px;"></a></p>
 
 
 Continue to the <a href="#testing">Step 2</a> of this installation tutorial.</p>
@@ -111,12 +111,13 @@ Continue to the <a href="#testing">Step 2</a> of this installation tutorial.</p>
 <li>Download and open <a href="http://orange.biolab.si/download/files/Orange3-3.2.dev-current.win32-py3.4-install.exe">
 Orange3 installation file</a> from <a href="http://orange.biolab.si/download/files">http://orange.biolab.si/download/files</a>.
 </li>
-<li>Follow installation wizard to install Orange3 and its dependencies (Python3.4, NumPy, ...)</li>
-<li>Install <a href="http://www.graphviz.org/pub/graphviz/stable/windows/graphviz-2.38.msi">Graphviz</a></li>
-<li>Install <a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/68tmfkay/pygraphviz-1.3rc2-cp34-none-win32.whl">pygraphviz</a></li>
-<li>Install DataFusion Add-on</li>
-<li>Restart Orange3</li>
-<li>Continue to <a href="#testing">Step 2</a></li>
+<li>Follow installation wizard to install Orange3 and its dependencies (Python3.4, NumPy, ...).</li>
+<li>Install <a href="http://www.graphviz.org/pub/graphviz/stable/windows/graphviz-2.38.msi">Graphviz</a>.</li>
+<li>Download <a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/68tmfkay/pygraphviz-1.3rc2-cp34-none-win32.whl">pygraphviz</a> and 
+execute  <a href="pygraphviz.bat">Pygraphviz install script</a>. </li>
+<li>Install DataFusion Add-on.</li>
+<li>Restart Orange3.</li>
+<li>Continue to <a href="#testing">Step 2</a>.</li>
 </ul>
 
 <h4>Detailed installation instructions</h4>
@@ -150,7 +151,8 @@ you want to allow this program to make changes to your computer.</p>
 <p> Double click on the graphviz-2.38.msi file. If the security dialog asks 
 you, whether you want to run this software, click Run button. 
 
-<p> Install graphviz by following the installation wizard. </p>
+<p> Install graphviz by following the installation wizard. Choose yes, when asked 
+if you want to allow this program to make changes to your computer.</p>
 <p><a href="image19-2.png"><img src="image19-2.png" style="max-width:300px;"></a></p>
 <p><a href="image20-2.png"><img src="image20-2.png" style="max-width:300px;"></a></p>
 <p><a href="image21-2.png"><img src="image21-2.png" style="max-width:300px;"></a></p>
@@ -164,7 +166,9 @@ from <a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/#pygraphviz"> http://www
 
 <p> Now download the <a href="pygraphviz.bat">Pygraphviz install script</a> to the same directory, 
 where you downloaded the pygraphviz package. Open the download directory and 
-double click on the <a href="pygraphviz.bat">pygraphviz.bat</a> script.</p>
+double click on the <a href="pygraphviz.bat">pygraphviz.bat</a> script.
+Choose Run, when asked if you are sure you want to run this software.</p>
+<p><a href="image26-1.png"><img src="image26-1.png" style="max-width:300px;"></a></p>
 
 <p> A window will open, where you can check the output of the pygraphviz installation.</p>
 <p><a href="image27-2.png"><img src="image27-2.png" style="max-width:300px;"></a></p>
@@ -286,7 +290,7 @@ python setup.py develop</pre></code>
 
 <p>When you open Orange, you should see a canvas with many categories on the left, i.e. Data, Visualize, Classify, etc. In the tutorial we will primarily use widgets from Data Fusion category and construct workflows as the one show in the figure below. </p>
 
-<p><img src="image16.png" style="max-width:500px;"></p>
+<p><a href="datafusion.png"><img src="datafusion-2.png" style="max-width:500px;"></a></p>
 
 <p>During the tutorial we will also use <a href="http://bit.ly/1Gb8SJ7">additional data sets from molecular biology that are available for download. </a>
 
