@@ -2,7 +2,7 @@
 
 p=$PWD
 sudo zypper refresh
-sudo zypper -n install git python-virtualenv python3-devel gcc gcc-c++ python3-numpy python3-numpy-devel python3-scipy python3-qt4-devel graphviz-devel
+sudo zypper -n install git python-virtualenv python3-devel gcc gcc-c++ python3-numpy python3-numpy-devel python3-scipy python3-qt4-devel graphviz-devel graphviz
 
 mkdir orange3env
 virtualenv -p python3 --system-site-packages orange3env
