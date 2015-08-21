@@ -15,7 +15,7 @@ pip install -r requirements.txt &&
 pip install -r requirements-gui.txt &&
 python setup.py develop &&
 cd .. &&
-git clone https://github.com/BlazZupan/orange3-datafusion &&
+git clone https://github.com/biolab/orange3-datafusion &&
 cd orange3-datafusion &&
 python setup.py develop
 
